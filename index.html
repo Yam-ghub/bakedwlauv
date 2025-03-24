@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BakedwithLauv - Cookie Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #FCE6F0; 
+            color: #333; 
+            text-align: center; /* Centralizing Everything */
+        }
+
+        header {
+            background: url('cookie.png') no-repeat center center; /* Background image for header */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); 
+        }
+
+        p.tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 3px 3px 4px rgb(87, 2, 2); 
+        }
+
+        nav {
+            background-color: #fecece;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 5px solid #F1B0C7;
+            border-bottom: 5px solid #F1B0C7;
+        }
+
+        nav ul { list-style-type: none; }
+        nav ul li { display: inline; margin-right: 30px; }
+        nav ul li a { color: rgb(255, 255, 255); text-decoration: none; font-size: 1.4rem; font-weight: 600; }
+        nav ul li a:hover { text-decoration: underline; }
+
+        section {
+            padding: 3rem 0;
+            margin: 3rem 0;
+            background-color: #fececeb8;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #ffd5d0;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
+        .product h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+
+        .btn-3d {
+            background-color: #ae8775d1;
+            color: white;
+            font-size: 1.1rem;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-3d:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #9b2727d0;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p { font-size: 1rem; }
+
+        /* Background Image for Cookies Section */
+        #cookies {
+            background-color: #FFD1DC; /* Light pink color */
+            padding: 5rem 0; /* Increase spacing for better visibility */
+        }
+
+
+        #cookies h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BakedwithLauv</h1>
+        <p class="tagline">Love at First Bite</p>
+    </header>
+
+    <nav>
+        <ul>
+            <p class="tagline">Our Cookies</p>
+        </ul>
+    </nav>
+
+    <section id="cookies">
+        <h2>Our Delicious Cookies</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="CookiesMarsh.png" alt="Oreo Soft Cookie"> 
+                <h3>Oreo Soft Cookie</h3>
+                <p>Soft and chewy with the perfect blend of Oreo cookies.</p>
+                <button class="btn-3d">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="Cookiehers.png" alt="Cookie Cereals">
+                <h3>Cookie Cereals</h3>
+                <p>Crispy and crunchy cookie-shaped cereals, perfect for breakfast or snacking.</p>
+                <button class="btn-3d">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="CookiesMarsh.png" alt="Marshmallow Cookie">
+                <h3>Marshmallow Cookie</h3>
+                <p>Chewy cookie filled with gooey marshmallows for the perfect treat!</p>
+                <button class="btn-3d">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:lauviahdenisse@gmail.com">bakedwithlauv@gmail.com</a></p>
+        <p>Phone: 09774559860</p>
+        <p>Instagram: <a href="https://instagram.com/bakedwlauv" target="_blank">@bakedwithlauv</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BakedwithLauv. All rights reserved.</p>
+    </footer>
+</body>
+</html>
